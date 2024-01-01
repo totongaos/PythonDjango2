@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Totongaos-Django</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">TOTONGAOS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">MiniProject</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Q&A</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+<div class="container video-list pt-3">
+  <h1>List my mini courses</h1>
+  {% for x in '1234' %}
+  <div class="media mb-4">
+    <a href=""><img class="mr-3" src="https://placekitten.com/350/180" alt="Generic placeholder image"></a>
+    <div class="media-body">
+      <a href=""><h5 class="mt-0">My mini course Django</h5></a>
+      <ul>
+        <li>Educator: <a href="">Totongaos</a></li>
+      </ul>
+      {% lorem 1 p random %}
+
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+</body>
+</html>
